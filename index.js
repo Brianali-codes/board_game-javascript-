@@ -51,6 +51,10 @@ function aiRoll() {
 function pcCounter() {
 
     //pc game logic(or the computer players logic.)
+    for (let i = 2; i <= finalCount; i++) {
+        document.getElementById(`box${i}`).querySelector(".pawn").children[0].style.display = "none";
+        document.getElementById(`box${i}`).querySelector(".pawn").children[1].style.display = "none";
+    }
 
     if (countPC === 2) {
         document.getElementById("box2").querySelector(".pawn").children[0].style.display = "block";
@@ -368,3 +372,5 @@ function removePawn() {
         }
     }
 }
+
+
